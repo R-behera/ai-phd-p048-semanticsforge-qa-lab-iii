@@ -1,0 +1,13 @@
+{
+  "professor": "Hal Daume III",
+  "university": "University of Maryland",
+  "program": "Computer Science",
+  "research_area": "NLP, ML, fairness, structured prediction",
+  "representative_paper": "Frustratingly Easy Domain Adaptation; 2007; ACL",
+  "paper_link": "https://scholar.google.com/scholar?q=Frustratingly+Easy+Domain+Adaptation",
+  "project_family": "trustworthy",
+  "focus": "NLP",
+  "value_add_artifact": "adaptive red-team and repair regression harness",
+  "next_step": "Replace seed cases with task-specific failures and verify repairs do not regress safe cases.",
+  "generated_for": "professor outreach value-add starter"
+}
