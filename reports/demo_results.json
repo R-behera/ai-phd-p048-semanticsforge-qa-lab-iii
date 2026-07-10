@@ -12,6 +12,46 @@
   "next_step": "Replace seed cases with task-specific failures and verify repairs do not regress safe cases.",
   "professor": "Hal Daume III",
   "project_family": "trustworthy",
+  "proposed_method": {
+    "algorithm_id": "P048-Iii-Nlp",
+    "algorithm_name": "IIIUncertaintyNlpFuseEngine",
+    "core_mechanism": "prioritizes severe open violations and repair regressions for red-team follow-up",
+    "decision_rule": "Rank seed cases by trustworthy-specific priority score with III-aligned focus term 'NLP'.",
+    "mean_priority_score": 0.3457,
+    "project_family": "trustworthy",
+    "top_cases": [
+      {
+        "action": "open red-team repair task",
+        "case_id": "T4",
+        "priority_score": 0.99,
+        "signals": {
+          "severity": 1.0,
+          "unrepaired": true,
+          "violation": true
+        }
+      },
+      {
+        "action": "monitor as regression control",
+        "case_id": "T2",
+        "priority_score": 0.336,
+        "signals": {
+          "severity": 0.6,
+          "unrepaired": false,
+          "violation": true
+        }
+      },
+      {
+        "action": "monitor as regression control",
+        "case_id": "T3",
+        "priority_score": 0.0567,
+        "signals": {
+          "severity": 0.8,
+          "unrepaired": false,
+          "violation": false
+        }
+      }
+    ]
+  },
   "research_area": "NLP, ML, fairness, structured prediction",
   "university": "University of Maryland",
   "value_add": "adaptive red-team and repair regression harness"
